@@ -11,6 +11,16 @@
 
 这是一个无构建步骤的静态站点，可直接打开 `index.html`，或在目录中启动任意静态文件服务器。
 
+## 更新课程文件
+
+页面中的学生资料由本站直接提供下载。更新相邻的 `LAE` 或 `CMExercise` 仓库后，在本目录运行：
+
+```powershell
+.\scripts\sync-course-files.ps1
+```
+
+脚本会把页面使用的发布文件同步到 `downloads/`；源仓库链接仍保留在课程标题旁，供查看源码和历史。
+
 ## 发布
 
 GitHub Pages 从 `main` 分支根目录发布，自定义域名由 `CNAME` 文件设置为 `ta.temaurinum.moe`。
